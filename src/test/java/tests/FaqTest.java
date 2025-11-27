@@ -20,7 +20,7 @@ public class FaqTest extends BaseTest{
         this.expectedAnswer = expectedAnswer;
     }
     // Запускаем тест один раз для каждой пары
-    @Parameterized.Parameters()
+    @Parameterized.Parameters(name = "Проверка ответа на вопрос № {0}")
     public static Object[][] getCredentials() {
         return new Object[][]{
                 {0, "Сутки — 400 рублей. Оплата курьеру — наличными или картой."},

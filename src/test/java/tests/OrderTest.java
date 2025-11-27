@@ -43,7 +43,7 @@ public class OrderTest extends BaseTest{
     }
 
     // Предоставляем тестовые данные для оформления заказа
-    @Parameterized.Parameters()
+    @Parameterized.Parameters(name = "Тест заказа: кнопка {0}, заказчик {2}")
     public static Object[][] getOrderData() {
         return new Object[][]{
                 {"top", "Мария", "Семенова", "Москва, Красная Площадь, 5", "Ново", "Новокосино", "12345678911", "7-е ноября 2025 г.", "сутки", "black",
